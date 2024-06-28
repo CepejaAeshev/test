@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Header1</h1>
+    <h2>Header2</h2>
+    <h3>Header3</h3>
+    <h4>Header4</h4>
+    <h5>Header5</h5>
+    <h6>Header6</h6>
+    <p>
+        Paragraph
+        <i>Paragraph</i>
+        <em>Paragraph</em>
+        <b>Paragraph</b>
+        <strong>Paragraph</strong>
+        <sub>paragraph</sub>
+        <sup>paragraph</sup>
+    </p>
+    <p>ul - unordered list (ненуменованный список)</p>
+    <p>ol - ordered list (упорядоченный список)</p>
+    <p>li - list item (элемент списка)</p>
+    <ul>
+        <li>First element</li>
+        <li>Second element</li>
+    </ul>
+    <ol>
+        <li>First element</li>
+        <li>Second element</li>
+    </ol>
+    <!--Comment-->
+    <p>
+        <!-- ./ - искать в папке в которой лежит index.html, ../ выйти из этой папки на уровень выше-->
+        <img src="/site1/img/logo.png" alt="Относительный путь к картинке">
+    </p>
+    <p>
+        <!-- абсолютный адрес задаётся из корня системы (т.е. C:/... либо если на сервере то корневая директория будет другой) либо полной ссылкой в сети-->
+        <img src="https://sun9-47.userapi.com/impg/dXAZ1vq5MCdfE3Y3cY6jdA1pHiG0S_xtDX-oiw/eb6h6Z9Rht0.jpg?size=382x387&quality=95&sign=2ff62c882be255304df52276174ff7ea&type=album" alt="Абсолютный путь к картинке">
+    </p>
+    <p>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=toHxrd3DRbQuNB_3">
+            click here
+        </a>
+    </p>
+    <p>
+        <hr> <!--Разделяющая линия (считается плохим тоном, хз почему)-->
+    </p>
+    <div>div</div>
+    <span>span</span>
+    <!--id="название-элемента" - указать название для конкретного элемента. айдишники уникальные на всю страницу.
+        class="название-класса"  - группа элементов для которой можно задать свои атрибуты
+        одновременно можно использовать и id, и class; также их можно использовать не в единственном количестве
+        если в параграфе задать атрибут id то передав его в ссылку можно будет перейти к этому элемену по данной ссылке
+        другое название ссылки - якорь (anchor) поэтому тег <a> -->
+    <p>
+    <!--Для любого тега формы есть атрибут disabled - нельзя выбрать элемент-->
+        <form action="" method="" autocomplete="">
+            <p><input type="text" placeholder="Ввод обычного текста"></p>
+            <p><input type="password" placeholder="Ввод пароля"></p>
+            <p><input type="checkbox" checked></p>
+            <p><input type="checkbox"></p>
+            <p>
+                <input type="radio"> A
+                <input type="radio"> B
+            </p>
+            <p>
+                <input type="radio" name="aorb"> A
+                <input type="radio" name="aorb"> B
+            </p>
+            <p>
+                <select>    <!--атрибут multiple позволяет делать множественный выбор внутри списка-->
+                    <option value="" selected disabled>Выберите из списка</option> <!--selected - выбран по умолчанию-->
+                    <option value="">A</option>
+                    <option value="">B</option>
+                    <optgroup label="C...">
+                        <option value="">C</option>
+                        <option value="">D</option>
+                        <option value="">E</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <textarea placeholder="сюда можно писать текст"></textarea> <!--Если ввести текст между тегами то он изначально будет в текстовом поле-->
+            </p>
+        </form>
+    </p>
+</body>
+</html>
