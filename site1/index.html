@@ -34,10 +34,12 @@
     <!--Comment-->
     <p>
         <!-- ./ - искать в папке в которой лежит index.html, ../ выйти из этой папки на уровень выше-->
-        <img src="/site1/img/logo.png" alt="Относительный путь к картинке">
+        <img src="./img/1708331160686.gif" alt="Относительный путь к картинке">
     </p>
     <p>
         <!-- абсолютный адрес задаётся из корня системы (т.е. C:/... либо если на сервере то корневая директория будет другой) либо полной ссылкой в сети-->
+        <img src="D:/prog/test/site1/img/1708331160686.gif" alt="Абсолютный путь к картинке из корня системы (открывать через индекс)">
+        <img src="/site1/img/1708331160686.gif" alt="Абсолютный путь к картинке из корня проекта (открывать через лайфсервер)">
         <img src="https://sun9-47.userapi.com/impg/dXAZ1vq5MCdfE3Y3cY6jdA1pHiG0S_xtDX-oiw/eb6h6Z9Rht0.jpg?size=382x387&quality=95&sign=2ff62c882be255304df52276174ff7ea&type=album" alt="Абсолютный путь к картинке">
     </p>
     <p>
@@ -86,6 +88,46 @@
                 <textarea placeholder="сюда можно писать текст"></textarea> <!--Если ввести текст между тегами то он изначально будет в текстовом поле-->
             </p>
         </form>
+        <form>
+            <label for="first">first</label>
+            <input type="checkbox" id="first" value="">
+            <label for="second">second</label>
+            <input type="checkbox" id="second" value="">
+        </form>
+        <form action="">
+            <input type="file" > <!-- -/multiple -->
+            <input type="range" min="0" max="100" step="10">
+        </form>
+        <input type="number" min="0" max="50" step="5">
+        <input type="color">
+        <input type="date" name="" id="">
     </p>
+    <p>
+        <form method="get"> <!--методы get, post...-->
+            <!--атрибут required     требует чтобы поле формы было заполнено
+                        maxlength="" устанавливает максимальную длину поля input
+                        minlength="" соответственно минимальное
+                        autofocus    по умолчанию устанавливает курсор на это поле
+                        tabindex=""  нажав таб можно перейти на следующие проиндексированные поля
+                        value=""     задать значение по умолчанию
+                        readonly     запретить изменение содержания поля-->
+            <input type="email" placeholder="email" name="email" required>
+            <input type="submit" value="send"> <!--placeholder не работает-->
+            <button type="submit">send2 button</button>
+            <input type="reset" value="reset">
+            <button type="reset">reset2 button</button>
+        </form>
+    </p>
+    <table border="1">      <!--таблица с границей в 1px-->
+        <tr>                <!--тег строки !!!заполнение таблицы начинается со строк. в таблице необходима минимум одна строка-->
+            <td>one</td>    <!--ячейки строки. кол-во ячеек в строках должно совпадать-->
+            <td>two</td>    
+        </tr>
+        <!--можно обернуть строки в тег <thead></thead> - выводятся наверху таблицы
+                                        <tbody></tbody>
+                                        <tfoot></tfoot> - выводятся внизу таблицы
+        атрибут для td colspan="n" объединяет n ячеек в строке включая ту, для которой этот атрибут был прописан
+                    tr rowspan="n" аналогично со строками-->
+    </table>
 </body>
 </html>
