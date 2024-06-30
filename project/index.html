@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- локаль, лучше изменять ее с помощью ru -->
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Заголовок 1</h1>
+	<h2>Заголовок 2</h2>
+	<h3>Заголовок 3</h3>
+	<h4>Заголовок 4</h4>
+	<h5>Заголовок 5</h5>
+	<h6>Заголовок 6</h6>
+	<p>
+		Lorem, <i>ipsum dolor sit</i> amet consectetur <i>adipisicing elit</i>. Possimus, dignissimos.
+	</p>
+	<p>
+		Lorem ipsum<i> dolor <sup>sit amet</sup> consectetur</i> adipisicing elit. <strong>Explicabo <sub>eveniet
+				maiores</sub> fugit</strong> et temp Enim error <em>dolores tenetur</em> debitis laudantium!
+	</p>
+	<!-- тег p - тег параграфа -->
+	<!-- тег i - текст наклонный -->
+	<!-- <i> (наклонный шрифт), <b> (полужирный шрифт), <sub> (нижний индекс), <sup> (верхний индекс).  -->
+	<!-- теги <strong> и <em> для выделения важного текста, аналогично тегам b и i, для слабовидящих  -->
+	<ul>
+		<li>пункт 1</li>
+		<li>пункт 2</li>
+		<li>пункт 3</li>
+		<li>пункт 4</li>
+		<li>пункт 5</li>
+	</ul>
+	<!-- теги  списков, внутри только li, ul-точки, ol-цифры -->
+	<img src="/project/img/VTFn.gif" alt="абсолютный путь">
+	<img src="../project/img/VTFn.gif" alt="относительный путь">
+	<a href="/loftschool.com" target="_blank">
+		<p>Серегамен</p>
+	</a>
+	<hr>
+	<a href="./aboutme.html" title="Перевод на другую страницу">
+		Моя страница
+	</a>
+	<div>Я div</div>
+	<span> Я спан </span>
+	<hr>
+	<!-- div и span - блочные теги, которые не имеют стилизаций, фундаментальные для работы в верстке и служат,чтобы потом накладывать стили на них
+	id = "header - уникальное значение" - уникальный id - служит в дальнейшем для обработки в javascript 
+	и для выделения определенных блоков
+	id - должно быть разным, так как, если мы напишем одинаковые имена, то будет нарушаться валидность и возникнут проблемы со стилями 
+	class - не такой уникальный как id, возможно назначить несколько классов -->
+	
+	<!-- _blank - это открытие ссылки в другом окне
+	_self - в этом же  -->
+	<a href="#needed">Нужный текст</a>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<p><b id="needed1">нужный текст</b> sit amet consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<p><b id="needed">нужный текст</b> consectetur, adipisicing elit. Distinctio, aliquid.</p>
+	<!-- переход по якорю или по кешу href="#needed" -->
+	 <input type="file">
+	 <!-- выбор файла какого то из компьютера -->
+	 <hr>
+	 <input type="color">
+	 <hr>
+	 <!-- плашка цвета -->
+	 <input type="range" min="0" max="100" step="10">
+	 <!-- плашка перемешения "цены от 0 до 100 с шагом 10" -->
+	 <hr>
+	 <input type="number" step="10">
+	 <!-- плашка с цифрами (без буквы) с шагом 10 -->
+	 <hr>
+	 <input type="data" >
+	 <hr>
+	 <!-- тег table - тек отвечающий за таблицу, где в строках tr - содержаться сколько то ячеек -->
+	 <table border="1">
+		<!-- тег thead - для создания структуры, куда мы помещаем наши начальные данные(голова) -->
+		<!-- теги tr - отвечает за строку, тег th - отвечает за ячейку этой строки -->
+		<!-- теги th - делают текст жирным -->
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Имя</th>
+				<th>Фамилия</th>
+			</tr>
+		</thead>
+		<!-- тег тела tbody - так же для структуры, туда мы помещаем тело  -->
+		<!-- атрибут rowspan = "3" - замена по горизонтали этого слова, то есть теперь это слово занимает 3 ячейки по горизонтали -->
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Владимир</td>
+				<td rowspan="3">Денисов</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Александр</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Илья</td>
+			</tr>
+		</tbody>
+		<!-- тег tfoot - служит для итоговой строки, colspan - атрибут, для объединения по вертикали ячеек  -->
+		<tfoot>
+			<tr>
+				<td colspan="2">
+					Итого количество человек 
+				</td>
+				<td>
+					3
+				</td>
+			</tr>
+		</tfoot>
+	 </table>
+	 <!-- плашка c выбором даты	 (https://caniuse.com/)-проверка на этом сайте доступным типов одиночного тега input -->
+
+
+	 
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>
+		Серегин
+	</h1>
+	<form action="">
+		Имя <input type="text" placeholder="введите имя">
+		Пароль <input type="password">
+		<!-- input type = text - просто плашка, placeholder - скрытый текст на плашке -->
+		<hr>
+		<h3>Ваши интересы</h3>
+		тег label - позволяет не тыкать мышкой на квадратик, а тыкать прям на слово для выбора варианта ответа
+		<label for="music">Музыка</label>
+		<!-- type = "checkbox" - множественный выбор(квадратики), checked - выбор при создании  -->
+		<input type="checkbox" id="music" checked>
+		<label for="sport">Спорт</label>
+		<input type="checkbox" id="sport">
+		<label for="developer">Разработка</label>
+		<input type="checkbox" id="developer" checked>
+		<label for="sleep">Cон</label>
+		<input type="checkbox" id="sleep">
+		<hr>
+		<!-- type = "radio" - тип одиночного выбора при условии если name у всех одинаковые  -->
+		<h3>Способ оплаты</h3>
+		Visa <input type="radio" name="payment">
+		Mastercard <input type="radio" name="payment">
+		Мир <input type="radio" name="payment">
+		<hr>
+		<h3>Страна проживания</h3>
+		<!-- select - тег лента 
+		optgroup - тег группы, взятие в группы определенных значений в ленте, бывает удобно когда много всего  -->
+		<select>
+			<option value="">Выберите страну</option>
+			<option value="">Россия</option>
+			<optgroup label="Европа">
+				<option value="">Англия</option>
+				<option value="">Германия</option>
+				<option value="">Эстония</option>
+			</optgroup>
+		</select>
+		<hr>
+		<h3>Иностранные языки</h3>
+		<!-- select multiple - множественный выбор в ленте  -->
+		<select multiple>
+			<option value="">Английский</option>
+			<option value="">Немецкий</option>
+			<option value="">Португальский</option>
+		</select>
+		<h3>Комментарии</h3>
+		<!-- тег - для комментариев, с помощью css, можно запретить расстягивать-->
+
+		<textarea></textarea>
+
+	</form>
+	<form action="" method="get" enctype="multipart/form-data" autocomplete="off">
+		<!-- enctype="multipart/form-data" - отправка какого-то файла -->
+		<!-- get запрос-на сайте например мы нашли какой то товар и отправляем форму другу, скорее всего отправка будет осуществляться get запросом -->
+		<!-- method-служит для того, чтобы каким способом отправить данные, зависит от проекта, "get" и "post" пользуемся пока -->
+		<!-- Имя -->
+		<!-- name на странице указывается и его значение(value) -->
+		Имя
+		<input type="text" name="first-name" value="Денисов" readonly minlength="10" required tabindex="1" autofocus>
+		<!-- readonly - неизменяемое value, min/maxlength - мин/макс длина, required- поле обязательно для заполнения данных,autofocus - курсор автоматически находится на правильном месте -->
+
+		Фамилия
+		<input type="text" name="last-name" tabindex="2">
+		Аватар
+		<input type="file" tabindex="3">
+		Почта
+		<input type="email" name="email" required tabindex="4">
+		<hr>
+		<!-- 1)способ создания кнопки при значении(value) отправить -->
+		<input type="submit" value="Отправить">
+		<!-- 2)способ создания кнопки, можно даже не указывать type -->
+		<button>
+			Отослать
+		</button>
+		<!-- тип reset сбрасывает данные  -->
+		<input type="reset" value="Сбросить">
+	</form>
+	<a href="./index.html" title="Перевод на другую страницу, на исходную">Назад</a>
+</body>
+
+</html>
