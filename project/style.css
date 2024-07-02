@@ -1,0 +1,33 @@
+/* #uniq{
+	color: aqua;
+} */
+/* .one .btn{
+	color: green;
+}
+.two .btn{
+	color: yellow;
+} */
+/* [href^="/flower"]{
+	color: red;
+}
+.one{
+	color: #fefe;
+
+}
+.two{
+	color: #cece;
+}
+p.b{
+	color: blue;
+}
+#top+p{
+	color: red;
+}
+.list >li{
+	border: 2px dashed #ccc; по первому уровню li
+}
+#top ~ p{
+	color: green; все примут зеленный цвет, находясь на одинаковом уровне
+} */
+/* работа с селекторами, как делать свойства css, различные обращения!  */
+/* p .b - обращения к тегу p, у которого есть класс */
